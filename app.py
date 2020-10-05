@@ -1,4 +1,5 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, send_from_directory
+
 import 
 import smtplib
 import os
@@ -9,6 +10,11 @@ app = Flask(__name__)
 app.static_folder = 'static'
 # app.template_folder='templates'
 # subscribers = []  
+
+@app.route('/favicon.ico')
+def favicon():
+    return send_from_directory(os.path.join(app.root_path, 'static'),
+    'favicon.ico', mimetype='image/vnd.microsoft.icon')
 
 @app.route('/index', methods=['POST', 'GET'])
 @app.route('/', methods=['POST', 'GET'])
