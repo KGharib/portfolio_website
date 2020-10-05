@@ -9,6 +9,12 @@ app.static_folder = 'static'
 # app.template_folder='templates'
 # subscribers = []  
 
+
+
+myloader = jinja2.ChoiceLoader([app.jinja_loader, jinja2.FileSystemLoader(['flaskapp/templates']),])
+app.jinja_loader = myloader
+
+
 @app.route('/favicon.ico')
 def favicon():
     return send_from_directory(os.path.join(app.root_path, 'static'),
