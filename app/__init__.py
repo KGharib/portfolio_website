@@ -49,26 +49,3 @@ def contact():
 def subscribe():
     title = 'Subscribe - Khalid Gharib'
     return render_template('subscribe.html')
-
-# @app.route('/form', methods=['POST'])
-# def form():
-#     title = 'Form'
-#     first_name= request.form.get("first_name")
-#     last_name= request.form.get("last_name")
-#     email = request.form.get("email")
-#     # message = 'You have subscribed to my Email newsletter'
-
-#     # server = smtplib.SMTP("smtp.gmail.com", 587)
-#     # server.starttls()
-#     # server.login("khalid.gharib1994@gmail.com", os.getenv("PASSWORD"))
-#     # server.sendmail("khalid.gharib1994@gmail.com", email, message)
-
-#     if not first_name or not last_name or not email:
-#         error_statement = 'Missing Fields, please try again.'
-#         return render_template('subscribe.html', error_statement=error_statement
-#                                 ,first_name=first_name
-#                                 ,last_name=last_name
-#                                 ,email=email)
-#     subscribers.append(f'{first_name} {last_name} | {email}')
-#     return render_template('form.html',subscribers=subscribers)
-
