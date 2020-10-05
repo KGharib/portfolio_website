@@ -20,7 +20,7 @@ def favicon():
     'favicon.ico', mimetype='image/vnd.microsoft.icon')
 
 
-@app.route('/', methods=['POST', 'GET'])
+# @app.route('/', methods=['POST', 'GET'])
 @app.route('/index')
 def index():
     return render_template('index.html')  
