@@ -17,33 +17,33 @@ def favicon():
 @app.route('/index', methods=['POST', 'GET'])
 @app.route('/', methods=['POST', 'GET'])
 def index():
-    return render_template('index.html')
+    return render_template('templates/index.html')  
 
 
 @app.route('/portfolio')
 def portfolio():
     title = 'Portfolio - Khalid Gharib'
-    return render_template('portfolio.html')
+    return render_template('templates/portfolio.html')
 
 @app.route('/blog')
 def blog():
     title = 'Blog - Khalid Gharib'
-    return render_template('blog.html')
+    return render_template('templates/blog.html')
 
 @app.route('/about')
 def about():
     title = 'About Me'
-    return render_template('about.html')
+    return render_template('templates/about.html')
 
 @app.route('/contact')
 def contact():
     title = 'Contact Info - Khalid Gharib'
-    return render_template('contact.html')
+    return render_template('templates/contact.html')
 
 @app.route('/subscribe')
 def subscribe():
     title = 'Subscribe - Khalid Gharib'
-    return render_template('subscribe.html')
+    return render_template('templates/subscribe.html')
 
 # @app.route('/form', methods=['POST'])
 # def form():
