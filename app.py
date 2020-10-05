@@ -3,7 +3,7 @@ import smtplib
 import os
 from flask_cors import CORS
 # Configure application
-app = Flask(__name__)
+app = Flask(__name__, template_folder='templates')
 CORS(app)
 app.static_folder = 'static'
 # app.template_folder='templates'
