@@ -28,27 +28,27 @@ def index():
 @app.route('/portfolio')
 def portfolio():
     title = 'Portfolio - Khalid Gharib'
-    return render_template('templates/portfolio.html')
+    return render_template('portfolio.html')
 
 @app.route('/blog')
 def blog():
     title = 'Blog - Khalid Gharib'
-    return render_template('templates/blog.html')
+    return render_template('blog.html')
 
 @app.route('/about')
 def about():
     title = 'About Me'
-    return render_template('templates/about.html')
+    return render_template('about.html')
 
 @app.route('/contact')
 def contact():
     title = 'Contact Info - Khalid Gharib'
-    return render_template('templates/contact.html')
+    return render_template('contact.html')
 
 @app.route('/subscribe')
 def subscribe():
     title = 'Subscribe - Khalid Gharib'
-    return render_template('templates/subscribe.html')
+    return render_template('subscribe.html')
 
 # @app.route('/form', methods=['POST'])
 # def form():
