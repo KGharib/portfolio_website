@@ -19,9 +19,8 @@ def favicon():
     return send_from_directory(os.path.join(app.root_path, 'static'),
     'favicon.ico', mimetype='image/vnd.microsoft.icon')
 
-
-# @app.route('/', methods=['POST', 'GET'])
-@app.route('/index')
+@app.route('/index', methods=['POST', 'GET'])
+@app.route('/', methods=['POST', 'GET'])
 def index():
     return render_template('index.html')  
 
