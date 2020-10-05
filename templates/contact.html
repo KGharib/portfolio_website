@@ -1,0 +1,103 @@
+{% extends 'base.html'%}
+{% block title %}Contact Info - Khalid Ghrarib{% endblock %}
+
+{% block content%}
+
+            <div class='container'>
+<h1 style="text-align: center;">Contact me on:</h1>
+<br/><br/><br/>
+<!-- CARD 0 (EMAIL)-->
+<div class="card card-cascade wider">
+  <!-- Card image -->
+  <div class="view view-cascade overlay">
+      <div class="mask rgba-white-slight"></div>
+    </a>
+  </div>
+  <!-- Card content -->
+  <div class="card-body card-body-cascade text-center">
+    <!-- Title -->
+    <h4 class="card-title"><strong>khalid.mgharib@gmail.com</strong></h4>
+    <!-- Text -->
+    <p class="card-text">Feel free to contact me with any oppurtunties or proposals.</p>
+    <!-- Email -->
+    <a  href="mailto:khalid.mgharib@gmail.com" class="px-2 fa-lg li-ic" target="_blank">
+    <i class="far fa-envelope" style="font-size: 0.8cm;"></i></a>
+  </div>
+</div> 
+
+<!-- CARD 1 (LINKEDIN)-->
+<br/><br/>
+<div class="card card-cascade wider">
+  <!-- Card image -->
+  <div class="view view-cascade overlay">
+    <img class="card-img-top" src="{{url_for('static', filename='media/Linkedin5.webp')}}" style="margin-top: -1cm;" alt="Card image cap">
+    <a href="https://www.linkedin.com/in/khalid-gharib/" target="_blank">
+      <div class="mask rgba-white-slight"></div>
+    </a>
+  </div>
+  <!-- Card content -->
+  <div class="card-body card-body-cascade text-center">
+    <!-- Title -->
+    <h4 class="card-title"><strong>LinkedIn</strong></h4>
+    <!-- Subtitle -->
+    <h5 class="blue-text pb-2"><strong>Khalid Gharib</strong></h5>
+    <!-- Text -->
+    <p class="card-text">See my skills, work experience and what im up to.</p>
+    <!-- Linkedin -->
+    <a href="https://www.linkedin.com/in/khalid-gharib/" class="px-2 fa-lg li-ic" target="_blank">
+      <i class="fab fa-linkedin-in" style="font-size: 0.8cm;"></i></a>
+  </div>
+</div>
+
+<!-- CARD 2 (GITHUB)-->
+<br/><br/>
+<div class="card card-cascade narrower">
+  <!-- Card image -->
+  <div class="view view-cascade overlay">
+    <img class="card-img-top" src="{{url_for('static', filename='media/github2.jpg', quality=95)}}"
+      alt="Card image cap">
+    <a href="https://github.com/KGharib" target="_blank">
+      <div class="mask rgba-white-slight"></div>
+    </a>
+  </div>
+  <div class="card-body card-body-cascade text-center">
+    <!-- Title -->
+    <h4 class="card-title"><strong>GitHub</strong></h4>
+    <p class="card-text">Look at some of my past and current projects im working on.</p>
+    <!-- Linkedin -->
+    <a href="https://github.com/KGharib" class="px-2 fa-lg li-ic" target="_blank">
+    <i class="fab fa-github" style="color: black; font-size: 0.8cm;"></i></a>
+  </div>
+</div>
+
+<!-- CARD 3 (MEDIUM)-->
+<br/><br/>
+<div class="card card-cascade narrower">
+  <!-- Card image -->
+  <div class="view view-cascade overlay">
+    <img class="card-img-top" src="{{url_for('static', filename='media/Medium5.jpg', quality=95)}}"
+      alt="Card image cap">
+    <a href="https://medium.com/@khalid.gharib1994" target="_blank">
+      <div class="mask rgba-white-slight"></div>
+    </a>
+  </div>
+  <div class="card-body card-body-cascade text-center">
+    <!-- Title -->
+    <h4 class="card-title"><strong>Medium Blogs</strong></h4>
+    <p class="card-text">Read some of my latest blog and learn more about what interests me and what I am passionate about!</p>
+    <!-- Linkedin -->
+    <a href="https://medium.com/@khalid.gharib1994" class="px-2 fa-lg li-ic" target="_blank">
+    <i class="fab fa-medium" style="color: black; font-size: 0.8cm;"></i></a>
+  </div>
+  
+  
+  
+</div>
+</div>
+<br/><br/><br/>
+            </div>
+      <main>
+        {% block main %}{% endblock %}
+      </main>
+
+{% endblock %}
