@@ -21,7 +21,10 @@ def favicon():
 
 # @app.route('/index', methods=['POST', 'GET'])
 @app.route('/', methods=['POST', 'GET'])
+
+@app.route('/index')
 def index():
+    title = 'Khalid Gharib'
     return render_template('index.html')  
 
 
