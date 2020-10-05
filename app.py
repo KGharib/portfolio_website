@@ -1,12 +1,10 @@
 from flask import Flask, render_template, request, send_from_directory
-
-import 
 import smtplib
 import os
 from flask_cors import CORS
 # Configure application
 app = Flask(__name__)
-
+CORS(app)
 app.static_folder = 'static'
 # app.template_folder='templates'
 # subscribers = []  
