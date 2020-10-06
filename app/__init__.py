@@ -22,7 +22,7 @@ def favicon():
 @app.route('/index', methods=['POST', 'GET'])
 @app.route('/', methods=['POST', 'GET'])
 def index():
-    return render_template('home.html')  
+    return render_template('index.html')  
 
 
 @app.route('/portfolio')
