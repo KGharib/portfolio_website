@@ -1,0 +1,35 @@
+{% extends 'base.html'%}
+{% block title %}Projects- Khalid Ghrarib{% endblock %}
+
+
+{% block content%}
+
+      <!-- Start banner Area -->
+
+			<section class="banner-area">
+				<div class="container">
+					<div class="row fullscreen align-items-center justify-content-between">
+						<div class="col-lg-6 col-md-6 col-xs-6 banner-left">
+            <br><br><br><br>
+							<h1 class="mt-10 mb-20">Khalid Gharib</h1>
+							<p>
+								Data Scientist/Analyst. Aspiring to be a positive impact on others through Data.
+							</p>
+              <br/><br/><br/> 
+						</div>
+						<div class="col-lg-6 col-md-6 col-xs-6 banner-right align-self-center">
+							<img src="{{url_for('static', filename='media/LinkedIn2.jpg')}}" class="rounded float-left rounded-circle mx-auto" style="width:10cm;height:11cm;max-width:100%;">
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- End banner Area -->
+	
+
+
+            </div>
+      <main>
+        {% block main %}{% endblock %}
+      </main>
+
+{% endblock %}
